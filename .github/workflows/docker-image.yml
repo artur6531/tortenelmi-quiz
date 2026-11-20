@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker images
       run: |
-          docker build ./backend --t quiz-backend:$(date +%s)
-          docker build ./frontend --t quiz-frontend:$(date +%s)
+          docker build ./backend -t quiz-backend:$(date +%s)
+          docker build ./frontend -t quiz-frontend:$(date +%s)
