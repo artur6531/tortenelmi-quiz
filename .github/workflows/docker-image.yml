@@ -18,4 +18,3 @@ jobs:
       run: |
           docker build ./backend --t quiz-backend:$(date +%s)
           docker build ./frontend --t quiz-frontend:$(date +%s)
-          
